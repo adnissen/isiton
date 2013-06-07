@@ -31,7 +31,9 @@ def search(song):
 	rdio = Rdio(("ad6x8mefbh2b2kh3deezgfq2", "tdWYdpKBfH"))
 	rdio_song = rdio.call("search", {"query": song, "types": "Track"})
 	if (rdio_song["status"] == "ok" and rdio_song["result"]["track_count"] != 0):
-		rdio_url = rdio_song["result"]["results"][0]["url"]
+		rdio_turl = rdio_song["result"]["results"][0]["url"]
+		rdio_url = "http://rdio.com"
+		rdio_url += rdio_turl
 	
 	return jsonify(spotify_url = spotify_attrib, rdio_url = rdio_url)
 
