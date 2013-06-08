@@ -28,13 +28,18 @@ function main() {
         }).done(function (data) {
             if (data.rdio_url != "" || data.spotify_url != "")
             {
-                 jQ('#eow-description').append('<br><br><strong>Stream this on: </strong>');
-                 console.log(data);
+                jQ('#watch-description-extra-info').append('<li class="watch-extra-info-long"><span id="streams" class="metadata-info"><span class="metadata-info-title">Play it now on: <br></span>');
+            
+                if (data.rdio_url != "")
+                   jQ('#streams').append('<a href="' + data.rdio_url + '">rdio</a><br>');
+
+                if (data.spotify_url != "")
+                    jQ('#streams').append('<a href="' + data.spotify_url + '">Spotify</a>');
+
+                jQ('#streams').append('</span></li>');
+                
+               
             }
-            if (data.rdio_url != "")
-               jQ('#eow-description').append('<br><a href="' + data.rdio_url + '">rdio</a>');
-            if (data.spotify_url != "")    
-               jQ('#eow-description').append('<br><a href="' + data.spotify_url + '">Spotify</a>');
         });
     }
 checkTitle();
