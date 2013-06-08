@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap.css" rel="stylesheet" media="screen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+  </head>
+  <body>
+  <div class="container">
+    <script type="text/javascript">
+      $.ajax({
+        url: "/search/HelloWorld"
+      }).done(function (data) {
+        $('.container').append('<h4>' + data.rdio_url + '</h4>')
+      })
+    </script>
+  </div>
+  </body>
+</html>

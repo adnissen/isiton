@@ -2,13 +2,14 @@
 from rdio import Rdio
 from flask import Flask
 from flask import jsonify
+from flask import render_template
 import requests
 import xml.etree.ElementTree as ET
 app = Flask(__name__)
 
 @app.route("/")
 def isiton():
-	return "Hello World!"
+	return render_template('home.html')
 
 @app.route('/search/<song>')
 def search(song):
