@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        Youtube: isiton
 // @namespace   com.adnissen.userscript.isiton
-// @include     https://www.youtube.com/*
-// @include     http://www.youtube.com/*
+// @match     https://www.youtube.com/*
+// @match     http://www.youtube.com/*
 // @version     0.0.2
 // ==/UserScript==
 
