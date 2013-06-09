@@ -24,7 +24,7 @@ function main() {
   function checkTitle() {
         var title = jQ('.watch-title').attr('title');
         jQ.ajax({
-        url: "http://127.0.0.1:5000/search/" + title
+        url: "http://isiton.herokuapp.com/search/" + title
         }).done(function (data) {
             if (data.rdio_url != "" || data.spotify_url != "")
             {
