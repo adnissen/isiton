@@ -1,0 +1,15 @@
+{
+	"name": "Is It On",
+	"version" : "1.0.0",
+	"manifest_version": 2,
+
+	"description": "A YouTube addon that shows if a song is on rdio or spotify",
+
+	"content_scripts": [
+		{
+			"matches":["http://www.youtube.com/*", "https://www.youtube.com/*"],
+			"js": ["isiton.user.js"]
+		}
+	]
+
+}

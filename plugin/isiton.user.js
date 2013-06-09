@@ -3,7 +3,7 @@
 // @namespace   com.adnissen.userscript.isiton
 // @match     https://www.youtube.com/*
 // @match     http://www.youtube.com/*
-// @version     0.0.2
+// @version     1.0.0
 // ==/UserScript==
 
 // a function that loads jQuery and calls a callback function when jQuery has finished loading
