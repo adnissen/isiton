@@ -86,4 +86,4 @@ def search(song):
     return jsonify(spotify_url = spotify_attrib, rdio_url = rdio_url)
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run()
