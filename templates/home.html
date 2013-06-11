@@ -8,16 +8,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" media="screen">
     <script src="http://code.jquery.com/jquery.js"></script>
+
+    <style type="text/css">
+    .fullwidth{
+      width: 100%;
+      text-align: center;
+    }
+
+    .biglink{
+      font-size: 24px;
+    }
+    </style>
   </head>
   <body>
   <div class="container">
-    <script type="text/javascript">
-      $.ajax({
-        url: "/search/HelloWorld"
-      }).done(function (data) {
-        $('.container').append('<h4>' + data.rdio_url + '</h4>')
-      })
-    </script>
+    <div class="row">
+      <div class="span8 offset2">
+        <center><h1>Is It On</h1></center>
+        <center><h3>a quick tool to find music on youtube on other services</h3></center>
+        <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span8 offset2">
+        <input type="text" class="fullwidth" placeholder="youtube link">
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span8 offset2">
+        <center><a href="#" class="biglink">where else can I find this?</a></center>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="span8 offset2">
+        <script type="text/javascript">
+          
+        </script>
+      </div>
+    </div>    
   </div>
   </body>
 </html>
