@@ -32,7 +32,7 @@
 
     <div class="row">
       <div class="span8 offset2">
-        <input type="text" class="fullwidth" placeholder="youtube link">
+        <input type="text" class="fullwidth" placeholder="http://www.youtube.com/watch?v=j0h2u87JwyA">
         <br>
         <br>
       </div>
@@ -75,7 +75,6 @@
                   if (data.rdio_url != "" || data.spotify_url != "")
                   {
                     $('#response').append("<center><h4>your music may be available here:</h4></center>")
-                    console.log(data);
                     if (data.rdio_url)
                       $('#response').append("<center><a href='" + data.rdio_url + "'>rdio</a>");
                     if (data.spotify_url)
