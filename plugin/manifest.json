@@ -3,7 +3,10 @@
 	"version" : "1.0.0",
 	"manifest_version": 2,
 
-	"description": "A YouTube addon that shows if a song is on rdio or spotify",
+	"description": "A YouTube service that shows if a song is available for instant streaming on rdio or spotify.",
+
+	"icons": {"48": "icon48.png",
+			  "128": "icon.png"},
 
 	"content_scripts": [
 		{

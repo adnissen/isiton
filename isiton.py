@@ -65,6 +65,7 @@ def search(song):
     song = song.replace('(Official Music Video)', '')
     song = song.replace('[Official Video]', '')
     song = song.replace('[Official Music Video]', '')
+    song = song.replace('-', '')
 
     spotify_request = requests.get('http://ws.spotify.com/search/1/track?q=%s' % song)
     spotify_root = ET.fromstring(spotify_request.content) #parse the xml out so we can do things with it
